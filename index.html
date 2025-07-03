@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeroh Sugar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #0f0f0f;
+      color: #f5f5f5;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('WhatsApp Image 2025-07-02 at 9.21.35 PM.jpeg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      color: #d4af37;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.5rem;
+      color: #eee;
+    }
+    nav {
+      background-color: rgba(15, 15, 15, 0.95);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+    nav a {
+      color: #d4af37;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeInUp 1.5s ease forwards;
+    }
+    .section h2 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      color: #d4af37;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .product-card {
+      background-color: #1c1c1c;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      text-align: center;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.8);
+    }
+    .product-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .product-card h3 {
+      margin: 15px 0 5px;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+    .product-card p {
+      color: #ccc;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+    .product-card button {
+      background: linear-gradient(45deg, #d4af37, #e6c06b);
+      border: none;
+      color: #0f0f0f;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: background 0.3s;
+    }
+    .product-card button:hover {
+      background: linear-gradient(45deg, #fff, #d4af37);
+    }
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 40px 20px;
+      color: #888;
+      font-size: 0.95rem;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><a href="#">Zeroh</a></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#shop">Shop</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <header>
+    <h1>Zeroh Sugar</h1>
+    <p>Sweetness Without Sacrifice</p>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Zeroh Sugar</h2>
+    <p style="text-align:center; max-width:800px; margin:auto; font-size:1.2rem; line-height:1.8;">Zeroh Sugar offers a guilt-free, diabetic-safe sweetener alternative made with monk fruit. Our mission is to reverse India’s metabolic health crisis by empowering people to live healthier lifestyles without sacrificing sweetness or indulgence.</p>
+  </section>
+
+  <section id="shop" class="section">
+    <h2>Shop Our Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-07-02 at 9.21.39 PM.jpeg" alt="Zeroh Sachets">
+        <h3>Monk Fruit Sachets (30 Pack)</h3>
+        <p>₹499</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-07-02 at 9.21.39 PM.jpeg" alt="Zeroh Jar">
+        <h3>Monk Fruit Sweetener Jar (250g)</h3>
+        <p>₹899</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Zeroh Sugar. All rights reserved.
+  </footer>
+</body>
+</html>
